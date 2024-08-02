@@ -1,4 +1,4 @@
 #pragma once
 
-#define INCLUDE_HOOKING_UTILS true // Requires MinHook
-#define INCLUDE_SCANNING_UTILS true
+#define INCLUDE_HOOKING true // Requires MinHook
+#define INCLUDE_SCANNING true

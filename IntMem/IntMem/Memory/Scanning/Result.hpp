@@ -1,4 +1,5 @@
 #pragma once
+#include <variant>
 
 namespace IntMem {
     template<class E>

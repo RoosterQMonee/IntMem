@@ -13,7 +13,7 @@
 
 void Init() {
     Logger::Initialize("log.txt");
-    Logger::Log<LogType::Info>("Log message");
+    Logger::Log<LogType::Info>("Loaded console.");
     Logger::Shutdown();
 }
 

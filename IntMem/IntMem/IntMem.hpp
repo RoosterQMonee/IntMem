@@ -10,4 +10,10 @@
 #include <IntMem/Memory/Process.hpp>
 #include <IntMem/Memory/Access.hpp>
 
-#include <IntMem/Memory/Scanning/Signatures.hpp>
+#ifdef INCLUDE_SCANNING
+	#include <IntMem/Memory/Scanning/Signatures.hpp>
+#endif
+
+#ifdef INCLUDE_HOOKING
+	#include <IntMem/Memory/Hooking/Hooking.hpp>
+#endif
