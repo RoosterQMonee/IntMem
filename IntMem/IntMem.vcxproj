@@ -144,6 +144,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="IntMem\Console\Logging.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntMem\Console\Exceptions.hpp" />
+    <ClInclude Include="IntMem\Console\Logging.h" />
+    <ClInclude Include="IntMem\Console\Logging.hpp" />
+    <ClInclude Include="IntMem\IntMem.hpp" />
+    <ClInclude Include="IntMem\LibraryDefinitions.hpp" />
+    <ClInclude Include="IntMem\Memory\Access.hpp" />
+    <ClInclude Include="IntMem\Memory\Internals\FixedString.hpp" />
+    <ClInclude Include="IntMem\Memory\Macros.hpp" />
+    <ClInclude Include="IntMem\Memory\Process.hpp" />
+    <ClInclude Include="IntMem\Memory\Scanning\Parsing.hpp" />
+    <ClInclude Include="IntMem\Memory\Scanning\Result.hpp" />
+    <ClInclude Include="IntMem\Memory\Scanning\Signatures.hpp" />
+    <ClInclude Include="IntMem\Memory\Internals\Virtuals.hpp" />
+    <ClInclude Include="IntMem\Memory\Traits.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,10 +8,13 @@
 */
 
 #include <Windows.h>
+#include <IntMem/Console/Logging.hpp>
 
 
 void Init() {
-
+    Logger::Initialize("log.txt");
+    Logger::Log<LogType::Info>("Log message");
+    Logger::Shutdown();
 }
 
 bool __stdcall DllMain(const HINSTANCE hinstDLL, const DWORD fdwReason, [[maybe_unused]] LPVOID lpReserved) {
