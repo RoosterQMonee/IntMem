@@ -41,7 +41,7 @@ namespace IntMem {
             return module_t{ reinterpret_cast<uintptr_t>(GetModuleHandleA(nullptr)) };
         }
 
-        std::optional<module_t> GetModule(const std::string& name) {
+        module_t GetModule(const std::string& name) {
             const auto module = GetModuleHandleA(name.c_str());
             if (module)
                 return module_t{ std::bit_cast<uintptr_t>(module) };

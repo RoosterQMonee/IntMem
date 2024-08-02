@@ -8,12 +8,16 @@
 */
 
 #include <Windows.h>
-#include <IntMem/Console/Logging.hpp>
+#include <IntMem/IntMem.hpp>
 
 
 void Init() {
     Logger::Initialize("log.txt");
     Logger::Log<LogType::Info>("Loaded console.");
+
+    IntMem::Process::module_t modhandle = IntMem::Process::GetModule("Minecraft.Windows.exe");
+    IntMem::Signatures::fixed_signature pattern = IntMem::Signatures::compile_signature<"48 83 EC ? ? ? C1 4C 8D 05">(); // yippee
+    
     Logger::Shutdown();
 }
 
